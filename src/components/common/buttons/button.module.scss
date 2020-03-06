@@ -1,0 +1,45 @@
+@import '../../../styles/global';
+
+.button {
+	background-color: $color-palette-1;
+	display: inline-block;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	height: 30px;
+	min-width: 15px;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+	&:hover {
+		background-color: $color-palette-2;
+	}
+}
+
+.button-icon {
+	@extend .button;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.button-instagram {
+	@extend .button-icon;
+	background-image: url('../../../images/instagram.png');
+}
+
+.button-twitter {
+	@extend .button-icon;
+	background-image: url('../../../images/twitter.png');
+}
+
+.button-linkedin {
+	@extend .button-icon;
+	background-image: url('../../../images/linkedin.png');
+	margin-right: 0px;
+}

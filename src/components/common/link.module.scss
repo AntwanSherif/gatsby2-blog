@@ -1,0 +1,13 @@
+@import '../../styles/global';
+
+.link {
+    color: $color-palette-1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-palette-2
+    }
+}
